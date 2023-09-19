@@ -1,0 +1,53 @@
+<div class="formcontainer container">
+    <input class="w-100 py-3" type="file" #excelFile (change)="handleFile()" />
+    <textarea class="w-100 p-3" #template placeholder="Enter your subject template. Use {columnName} as placeholder.">Hi {RecipientName}, i was trying to reach you because {Subject}</textarea>
+    <button class="w-100 p-3 btn btn-secondary" (click)="generateMailto()">Generate Mailto</button>
+    <p #mailtoLink></p>
+</div>
+
+<div class="infoContainer container">
+    <div id="variablesCardContainer" class="card mb-4">
+        <div class="card-header" id="variableCardHeader" data-toggle="collapse" data-target="#variableCardBody" aria-expanded="true" aria-controls="variableCardBody">
+            Available Variables
+        </div>
+        <div id="variableCardBody" class="collapse show card-body" id="availableVariables">
+            <ul #variableList class="m-0">
+                <li>this will be available after uploading your excell sheet</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="infoCardContainer" class="card mb-4">
+        <div class="card-header" id="infoCardHeader">
+            <div class="row">
+                <div class="col-6">
+                    Excel File Structure
+                </div>
+                <div class="col-6 text-end">
+                    <button class="btn btn-info text-light" data-bs-toggle="collapse" data-bs-target="#infoCardBody">Expand info</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="infoCardBody" class="collapse card-body">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Recipient</th>
+                  <th>Subject</th>
+                  <th>RecipientName</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>email@example.com</td>
+                  <td>Hello</td>
+                  <td>John</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>Your Excel file should follow this structure:</p>
+            <p><b>Note:</b> Make sure the first row of your Excel file contains these headers.</p>
+        </div>
+    </div>
+</div>
