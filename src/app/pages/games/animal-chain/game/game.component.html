@@ -1,19 +1,17 @@
 <div class="game-container">
-    <h2>Animal Chain</h2>
+    <h2>{{ 'animalChain.title' | translate }}</h2>
     <div class="input-group">
-      <input type="text" class="form-control" [(ngModel)]="currentGuess" placeholder="Guess an animal...">
+      <input type="text" class="form-control" [(ngModel)]="currentGuess" placeholder="{{ 'animalChain.guessPlaceholder' | translate }}">
       <div class="input-group-append">
-        <button class="btn btn-primary" (click)="submitGuess()">Guess</button>
+        <button class="btn btn-primary" (click)="submitGuess()">{{ 'animalChain.guessButton' | translate }}</button>
       </div>      
     </div>
   
     <div class="guessed-animals">
-      <h4>Guessed Animals:</h4>
+      <h4>{{ 'animalChain.guessedAnimalsTitle' | translate }}</h4>
       <ul>
-        <p *ngIf="error" class="text-danger">{{ error }}</p>
-
+        <p *ngIf="error" class="text-danger">{{ error  | translate }}</p>
         <li *ngFor="let animal of guessedAnimals">{{ animal }}</li>
       </ul>
     </div>
-  </div>
-  
+</div>

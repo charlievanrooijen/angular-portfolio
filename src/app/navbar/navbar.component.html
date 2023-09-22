@@ -1,27 +1,21 @@
 <nav class="navbar navbar-expand-md bg-dark border-bottom border-body" data-bs-theme="dark">
     <div class="container">
-        <!-- Brand or Logo can be placed here -->
-        <!-- <a class="navbar-brand" href="#">Your Logo</a> -->
-
-        <!-- Navbar toggler for mobile -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-        <!-- Menu items -->
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link text-light active" aria-current="page" routerLink="/">Home</a>
+                    <a class="nav-link text-light active" aria-current="page" routerLink="/">{{ 'navbar.home' | translate }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" routerLink="/games">Games</a>
+                    <a class="nav-link text-light" routerLink="/games">{{ 'navbar.games' | translate }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" routerLink="/apps">Apps</a>
+                    <a class="nav-link text-light" routerLink="/apps">{{ 'navbar.apps' | translate }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" routerLink="/about">About Me/CV</a>
+                    <a class="nav-link text-light" routerLink="/about">{{ 'navbar.about' | translate }}</a>
                 </li>
             </ul>
         </div>

@@ -1,0 +1,52 @@
+{
+    "landing": {
+      "greeting": "Hello, I'm Charlie. Just a developer looking to transition into game design. Let’s solve the world’s problems!",
+      "projects": "Here's where I'll showcase all of my projects."
+    },
+    "navbar": {
+      "home": "Home",
+      "games": "Games",
+      "apps": "Apps",
+      "about": "About Me/CV"
+    },
+    "gamesPage": {
+      "title": "Games",
+      "details": "Details"
+    },
+    "appsPage": {
+      "title": "Apps",
+      "details": "Details"
+    },
+    "about": {
+      "Work Experience": "Work Experience",
+      "Back End Developer": "Back End Developer",
+      "Garden Connect | Garden Retail Marketing": "Garden Connect | Garden Retail Marketing",
+      "Garden Connect description": "Garden Connect develops websites for garden centers. Here I gained knowledge of Symfony, PHP, SQL, and Postman. Tasks included adding new features to the CMS and bug fixing.",
+      "Consultant": "Consultant",
+      "Devoteam": "Devoteam",
+      "Devoteam description": "Devoteam is involved in Cloud, Integration, Data, and DevOps. I gained knowledge about integration consultancy here. It mainly consisted of REST APIs, AZURE, JAVA, and Mulesoft.",
+      "Intern": "Intern",
+      "4BIS Innovations B.V.": "4BIS Innovations B.V.",
+      "4BIS description": "4BIS has a varied income of projects that I could work on with support. A lot of knowledge about Nodejs, JQuery, and PHP was imparted to me here. I also learned a large part of my front-end skills here.",
+      "Junior Software Developer": "Junior Software Developer",
+      "Winst uit je woning": "Profit from your home",
+      "Winst description": "Here I programmed functions in PHP and handled bugs.",
+      "Education": "Education",
+      "Codam Coding College": "Codam Coding College",
+      "Codam description": "For 4 weeks, I participated in CODAM's 'Piscine' - a follow-up training for software engineers. The 'Piscine' (French for 'swimming pool') is a training and selection period of four weeks. During these weeks I worked on various projects in C. Thanks to this period, I realized that I wanted to delve into Game Design and Development.",
+      "Nova College": "Nova College",
+      "Nova description": "At Nova College, I was able to lay a foundation for starting in Web and app development."
+    },
+    "animalChain": {
+        "title": "Animal Chain",
+        "guessPlaceholder": "Guess an animal...",
+        "guessButton": "Guess",
+        "guessedAnimalsTitle": "Guessed Animals:",
+        "errors": {
+            "notInList": "Animal not in our list!",
+            "alreadyGuessed": "Animal already guessed!",
+            "shouldStartWith": "Animal should start with {{char}}!"
+        }
+    }
+  }
+  

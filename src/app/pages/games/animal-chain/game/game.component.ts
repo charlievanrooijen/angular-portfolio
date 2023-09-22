@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { AnimalValidatorService } from 'src/app/services/animal-validator.service';
+import { TranslateService } from '@ngx-translate/core'; 
 
 @Component({
   selector: 'app-game',
@@ -14,11 +15,19 @@ export class GameComponent implements OnInit {
   currentGuess: string = '';
   lastCharacter: string = '';
   error: string | null = null;
+  errorParams: any = {};
 
-  constructor(private http: HttpClient, private animalValidatorService: AnimalValidatorService) {}
+  constructor(
+    private http: HttpClient, 
+    private animalValidatorService: AnimalValidatorService,
+    private translate: TranslateService
+  ) {}
 
   ngOnInit(): void {
-    this.http.get<{ animals: string[] }>('/assets/animals.json').subscribe(data => {
+    const currentLang = this.translate.currentLang || 'en';
+    const filePath = `/assets/${currentLang}_animals.json`;
+
+    this.http.get<{ animals: string[] }>(filePath).subscribe(data => {
       this.animals = data.animals;
     });
   }
@@ -26,25 +35,24 @@ export class GameComponent implements OnInit {
   submitGuess(): void {
     this.error = null;
     
-    // Before submitting the guess:
     if (!this.animalValidatorService.validateAnimal(this.currentGuess)) {
-      this.error = 'Animal not in our list!';
+      this.error = 'animalChain.errors.notInList';
+      return;
+    }
+  
+    if (!this.animalValidatorService.isValidNextAnimal(this.currentGuess, this.lastCharacter)) {
+      this.error = `animalChain.errors.shouldStartWith`;
+      this.errorParams = { char: this.lastCharacter };
       return;
     }
     
     if (this.animalValidatorService.isAnimalGuessed(this.currentGuess, this.guessedAnimals)) {
-      this.error = 'Animal already guessed!';
+      this.error = 'animalChain.errors.alreadyGuessed';
       return;
     }
     
-    if (!this.animalValidatorService.isValidNextAnimal(this.currentGuess, this.lastCharacter)) {
-      this.error = `Animal should start with ${this.lastCharacter}!`;
-      return;
-    }
-
     this.guessedAnimals.push(this.currentGuess);
     this.lastCharacter = this.currentGuess.slice(-1);
-
     this.currentGuess = ''; // Reset the input field
   }
 }

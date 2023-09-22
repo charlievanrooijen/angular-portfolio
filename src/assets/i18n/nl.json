@@ -1,0 +1,52 @@
+{
+    "landing": {
+      "greeting": "Hallo, ik ben Charlie. Gewoon een ontwikkelaar die wil overstappen naar game-ontwerp. Laten we de problemen van de wereld oplossen!",
+      "projects": "Hier zal ik al mijn projecten laten zien."
+    },
+    "navbar": {
+      "home": "Home",
+      "games": "Games",
+      "apps": "Apps",
+      "about": "Over Mij/CV"
+    },
+    "gamesPage": {
+      "title": "Spelletjes",
+      "details": "Details"
+    },
+    "appsPage": {
+      "title": "Apps",
+      "details": "Details"
+    },
+    "about": {
+      "Work Experience": "Werkervaring",
+      "Back End Developer": "Back End Ontwikkelaar",
+      "Garden Connect | Garden Retail Marketing": "Garden Connect | Garden Retail Marketing",
+      "Garden Connect description": "Garden Connect ontwikkelt websites voor tuincentra. Hier heb ik kennis opgedaan van Symfony, PHP, SQL, en Postman. Werkzaamheden omvatten het toevoegen van nieuwe functies aan het CMS en het oplossen van bugs.",
+      "Consultant": "Consultant",
+      "Devoteam": "Devoteam",
+      "Devoteam description": "Devoteam houdt zich bezig met Cloud, Integratie, Data, en DevOps. Hier heb ik kennis opgedaan over integratie consultancy. Dit bestond voornamelijk uit REST APIs, AZURE, JAVA, en Mulesoft.",
+      "Intern": "Stagiair",
+      "4BIS Innovations B.V.": "4BIS Innovations B.V.",
+      "4BIS description": "4BIS heeft diverse projecten waarbij ik kon bijdragen met ondersteuning. Hier heb ik veel geleerd over Nodejs, JQuery, en PHP. Ook heb ik hier veel van mijn front-end vaardigheden geleerd.",
+      "Junior Software Developer": "Junior Software Ontwikkelaar",
+      "Winst uit je woning": "Winst uit je Woning",
+      "Winst description": "Hier programmeerde ik functies in PHP en handelde bugs af.",
+      "Education": "Opleidingen",
+      "Codam Coding College": "Codam Coding College",
+      "Codam description": "Gedurende 4 weken heb ik deelgenomen aan de 'Piscine' van CODAM - een vervolgopleiding voor software engineers. De 'Piscine' is een trainings- en selectieperiode van vier weken. Gedurende deze weken werkte ik aan verschillende projecten in C. Dankzij deze periode besefte ik dat ik me vooral wilde verdiepen in Game Design en Development.",
+      "Nova College": "Nova College",
+      "Nova description": "Bij het Nova College heb ik een fundering kunnen leggen voor het beginnen in Web en app ontwikkeling."
+    },
+    "animalChain": {
+        "title": "Dierenspel",
+        "guessPlaceholder": "Raad een dier...",
+        "guessButton": "Raad",
+        "guessedAnimalsTitle": "Geraden dieren:",
+        "errors": {
+            "notInList": "Dier niet in onze lijst!",
+            "alreadyGuessed": "Dier al geraden!",
+            "shouldStartWith": "Dier moet beginnen met een {{char}}!"
+        }
+    }
+  }
+  

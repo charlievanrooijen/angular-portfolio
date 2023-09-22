@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-12">
             <div class="cardContainer bg-dark my-3 p-3 rounded">
-                <h2 class="text-light">Apps</h2>
+                <h2 class="text-light">{{ 'appsPage.title' | translate }}</h2>
             </div>
         </div>
         <div class="col-sm-12 col-lg-4 mt-2 m-lg-0" *ngFor="let app of apps">
@@ -12,7 +12,7 @@
                     <img class="w-100" [src]="app.image" alt="{{ app.name }}">
                 </div>
                 <p class="text-light">{{ app.description }}</p>
-                <a class="text-light" [routerLink]="app.link">Details</a>
+                <a class="text-light" [routerLink]="app.link">{{ 'appsPage.details' | translate }}</a>
             </div>
         </div>
     </div>
