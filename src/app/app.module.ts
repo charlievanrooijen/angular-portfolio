@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +15,9 @@ import { KnappeKoppenComponent } from './pages/apps/knappe-koppe/knappe-koppe.co
 import { AnimalChainComponent } from './pages/games/animal-chain/animal-chain.component';
 import { AnimalGuesserComponent } from './pages/games/animal-guesser/animal-guesser.component';
 import { TwentyThreePlusOneComponent } from './pages/apps/twenty-three-plus-one/twenty-three-plus-one.component';
+import { IntroComponent } from './pages/games/animal-chain/intro/intro.component';
+import { GameComponent } from './pages/games/animal-chain/game/game.component';
+import { AddAnimalComponent } from './pages/games/animal-chain/add-animal/add-animal.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +31,16 @@ import { TwentyThreePlusOneComponent } from './pages/apps/twenty-three-plus-one/
     AnimalChainComponent,
     AnimalGuesserComponent,
     TwentyThreePlusOneComponent,
+    IntroComponent,
+    GameComponent,
+    AddAnimalComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule,
+    FormsModule,  
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,19 @@
+<div class="game-container">
+    <h2>Animal Chain</h2>
+    <div class="input-group">
+      <input type="text" class="form-control" [(ngModel)]="currentGuess" placeholder="Guess an animal...">
+      <div class="input-group-append">
+        <button class="btn btn-primary" (click)="submitGuess()">Guess</button>
+      </div>      
+    </div>
+  
+    <div class="guessed-animals">
+      <h4>Guessed Animals:</h4>
+      <ul>
+        <p *ngIf="error" class="text-danger">{{ error }}</p>
+
+        <li *ngFor="let animal of guessedAnimals">{{ animal }}</li>
+      </ul>
+    </div>
+  </div>
+  

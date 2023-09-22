@@ -78,3 +78,16 @@ body, html {
         width: 70%;
     }
 }
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .slideout-content {
+        width: 100%; /* Full screen width */
+        height: auto;
+        padding: 10px; /* Optional padding for some spacing */
+    }
+
+    .slideout-img {
+        max-width: 100%; /* Ensure it doesn't overflow its container */
+    }
+}
