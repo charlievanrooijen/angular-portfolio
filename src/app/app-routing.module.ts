@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 
 import { TwentyThreePlusOneComponent } from './pages/apps/twenty-three-plus-one/twenty-three-plus-one.component';
 import { KnappeKoppenComponent } from './pages/apps/knappe-koppe/knappe-koppe.component';
+import { ThreejsAppComponent } from './pages/apps/threejs-app/threejs-app.component';
 import { AnimalChainComponent } from './pages/games/animal-chain/animal-chain.component';
 import { AnimalGuesserComponent } from './pages/games/animal-guesser/animal-guesser.component';
 import { IntroComponent } from './pages/games/animal-chain/intro/intro.component';
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: 'apps', component: AppsComponent }, 
   { path: 'apps/23plusone', component: TwentyThreePlusOneComponent },
   { path: 'apps/knappe-koppe', component: KnappeKoppenComponent },
+  { path: 'apps/threejs', component: ThreejsAppComponent },
   { path: 'about', component: AboutComponent }
 ];
 

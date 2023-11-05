@@ -54,26 +54,55 @@ export class KnappeKoppenComponent {
 
   generateMailto(): void {
     if (this.globalData.length === 0) {
-      alert('No data loaded from Excel.');
+      alert('No data loaded from Excel. Please upload a valid Excel file.');
       return;
     }
-
+  
     const template = this.templateInput.nativeElement.value;
     this.mailtoContainer.nativeElement.innerHTML = '';
-
-    this.globalData.forEach(rowData => {
-      if (rowData["Recipient"] && rowData["RecipientName"] && rowData["Subject"]) {
-        let finalBody = template;
-        for (const key in rowData) {
-          finalBody = finalBody.replace(new RegExp(`{${key}}`, 'g'), rowData[key]);
-        }
-        const mailtoLink = `mailto:${encodeURIComponent(rowData["Recipient"])}?subject=${encodeURIComponent(rowData["Subject"] || "No Subject")}&body=${encodeURIComponent(finalBody)}`;
-        const linkElement = document.createElement('a');
-        linkElement.href = mailtoLink;
-        linkElement.classList.add("btn", "btn-success", "mt-1");
-        linkElement.innerText = `Send to ${rowData["Recipient"]}`;
-        this.mailtoContainer.nativeElement.appendChild(linkElement);
+    let errorMessages: string[] = [];
+  
+    this.globalData.forEach((rowData, index) => {
+      // Check for required fields
+      if (!rowData["Recipient"]) {
+        errorMessages.push(`Row ${index + 1}: Missing 'Recipient'.`);
+        return;
       }
+  
+      if (!rowData["RecipientName"]) {
+        errorMessages.push(`Row ${index + 1}: Missing 'RecipientName'.`);
+        return;
+      }
+  
+      if (!rowData["Subject"]) {
+        errorMessages.push(`Row ${index + 1}: Missing 'Subject'.`);
+        return;
+      }
+  
+      let finalBody = template;
+  
+      // Find all variables in the template
+      const templateVariables = template.match(/{\w+}/g) || [];
+      for (const variable of templateVariables) {
+        const strippedVar = variable.replace(/{|}/g, "");
+        if (rowData[strippedVar] !== undefined) {
+          finalBody = finalBody.replace(new RegExp(variable, 'g'), rowData[strippedVar]);
+        } else {
+          errorMessages.push(`Row ${index + 1}: Template uses '{${strippedVar}}' but corresponding data is missing.`);
+        }
+      }
+  
+      const mailtoLink = `mailto:${encodeURIComponent(rowData["Recipient"])}?subject=${encodeURIComponent(rowData["Subject"])}&body=${encodeURIComponent(finalBody)}`;
+      const linkElement = document.createElement('a');
+      linkElement.href = mailtoLink;
+      linkElement.classList.add("btn", "btn-success", "mt-1");
+      linkElement.innerText = `Send to ${rowData["Recipient"]}`;
+      this.mailtoContainer.nativeElement.appendChild(linkElement);
     });
-  }
+  
+    // Display error messages
+    if (errorMessages.length > 0) {
+      alert(`Errors:\n\n${errorMessages.join('\n')}`);
+    }
+  }  
 }

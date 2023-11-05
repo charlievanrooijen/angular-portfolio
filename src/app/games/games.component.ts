@@ -14,12 +14,12 @@ export class GamesComponent {
       image: 'assets/images/games/animals1.jpeg',
       link: '/games/animal-chain'
     },
-    {
-      name: 'Animal Guesser',
-      description: 'One person takes an animal that the other participants will guess.',
-      image: 'assets/images/games/animals2.jpeg',
-      link: '/games/animal-guesser'
-    }
+    // {
+    //   name: 'Animal Guesser',
+    //   description: 'One person takes an animal that the other participants will guess.',
+    //   image: 'assets/images/games/animals2.jpeg',
+    //   link: '/games/animal-guesser'
+    // }
   ];
 
   constructor() { }

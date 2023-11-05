@@ -34,25 +34,26 @@ export class GameComponent implements OnInit {
 
   submitGuess(): void {
     this.error = null;
+    const currentGuessLower = this.currentGuess.toLowerCase(); // Convert the guess to lowercase
     
-    if (!this.animalValidatorService.validateAnimal(this.currentGuess)) {
+    if (!this.animalValidatorService.validateAnimal(currentGuessLower)) {
       this.error = 'animalChain.errors.notInList';
       return;
     }
   
-    if (!this.animalValidatorService.isValidNextAnimal(this.currentGuess, this.lastCharacter)) {
+    if (!this.animalValidatorService.isValidNextAnimal(currentGuessLower, this.lastCharacter)) {
       this.error = `animalChain.errors.shouldStartWith`;
       this.errorParams = { char: this.lastCharacter };
       return;
     }
     
-    if (this.animalValidatorService.isAnimalGuessed(this.currentGuess, this.guessedAnimals)) {
+    if (this.animalValidatorService.isAnimalGuessed(currentGuessLower, this.guessedAnimals)) {
       this.error = 'animalChain.errors.alreadyGuessed';
       return;
     }
     
-    this.guessedAnimals.push(this.currentGuess);
-    this.lastCharacter = this.currentGuess.slice(-1);
-    this.currentGuess = ''; // Reset the input field
+    this.guessedAnimals.push(currentGuessLower); 
+    this.lastCharacter = currentGuessLower.slice(-1);
+    this.currentGuess = '';
   }
 }

@@ -21,6 +21,8 @@ import { TwentyThreePlusOneComponent } from './pages/apps/twenty-three-plus-one/
 import { IntroComponent } from './pages/games/animal-chain/intro/intro.component';
 import { GameComponent } from './pages/games/animal-chain/game/game.component';
 import { AddAnimalComponent } from './pages/games/animal-chain/add-animal/add-animal.component';
+import { ThreejsAppComponent } from './pages/apps/threejs-app/threejs-app.component';
+import { CubeComponent } from './cube/cube.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -41,6 +43,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     IntroComponent,
     GameComponent,
     AddAnimalComponent,
+    ThreejsAppComponent,
+    CubeComponent,
   ],
   imports: [
     BrowserModule,

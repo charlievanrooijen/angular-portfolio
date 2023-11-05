@@ -19,6 +19,12 @@ export class AppsComponent {
       description: 'A tool used for creating mail templates from an Excel sheet and a mail temlate. and gives a mailto link with a mail template',
       image: 'assets/images/apps/knappekoppen_mail.png',
       link: '/apps/knappe-koppe'
+    },
+    {
+      name: 'Three.js App',
+      description: 'Playground for 3d objects and such',
+      image: 'assets/images/apps/three.jpg',
+      link: '/apps/threejs'
     }
   ];
 
