@@ -22,7 +22,7 @@ export class AppsComponent {
     },
     {
       name: 'Three.js App',
-      description: 'Playground for 3d objects and such',
+      description: 'Playground for showing 3D models',
       image: 'assets/images/apps/three.jpg',
       link: '/apps/threejs'
     }

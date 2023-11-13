@@ -1,8 +1,8 @@
 {
-    "landing": {
-      "greeting": "Hallo, ik ben Charlie. Gewoon een ontwikkelaar die wil overstappen naar game-ontwerp. Laten we de problemen van de wereld oplossen!",
-      "projects": "Hier zal ik al mijn projecten laten zien."
-    },
+  "landing": {
+    "greeting": "Hallo wereld!",
+    "projects": "Welkom, ik ben Charlie. Als ontwikkelaar met een passie voor game design deel ik hier mijn projecten. Ook bied ik bijles aan voor beginnende webontwikkelaars om de fundamenten van webontwikkeling onder de knie te krijgen."
+  },
     "navbar": {
       "home": "Home",
       "games": "Games",
@@ -18,6 +18,8 @@
       "details": "Details"
     },
     "about": {
+      "tutoring-title" : "Bijles Webdevelopment: Betaal alleen als je het begrijpt!",
+      "tutoring" : "Vind je de basisprincipes van webdevelopment lastig? Wil je een solide fundament leggen in HTML, CSS en Vanilla JavaScript? Ik bied op maat gemaakte bijles aan die jouw kennis van de grond af opbouwt. Geïnspireerd door mijn rugbycoach, beloof ik: als je het niet begrijpt na onze sessie, dan is dat mijn verantwoordelijkheid. Wil je mij berijken over bijles? Stuur mij dan een berichtje op whatsapp",
       "Work Experience": "Werkervaring",
       "Back End Developer": "Back End Ontwikkelaar",
       "Garden Connect | Garden Retail Marketing": "Garden Connect | Garden Retail Marketing",

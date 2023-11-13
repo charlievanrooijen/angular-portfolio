@@ -1,8 +1,8 @@
 {
     "landing": {
-      "greeting": "Hello, I'm Charlie. Just a developer looking to transition into game design. Let’s solve the world’s problems!",
-      "projects": "Here's where I'll showcase all of my projects."
-    },
+      "greeting": "Hello World!",
+      "projects": "Welcome, I'm Charlie. A developer transitioning into game design, this is where I showcase my work. I also offer tutoring for aspiring web developers to master the basics of web development."
+    },  
     "navbar": {
       "home": "Home",
       "games": "Games",
@@ -18,6 +18,8 @@
       "details": "Details"
     },
     "about": {
+      "tutoring-title" : "Web Development Tutoring: Pay Only If You Understand!",
+      "tutoring" : "Struggling with the fundamentals of web development? Want to build a solid foundation in HTML, CSS, and Vanilla JavaScript? I offer customized tutoring designed to construct your knowledge from the ground up. Inspired by the educational philosophy of my rugby coach, I promise: if you don't understand after our session, that's on me.",
       "Work Experience": "Work Experience",
       "Back End Developer": "Back End Developer",
       "Garden Connect | Garden Retail Marketing": "Garden Connect | Garden Retail Marketing",

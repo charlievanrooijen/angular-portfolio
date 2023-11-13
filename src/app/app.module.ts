@@ -23,6 +23,7 @@ import { GameComponent } from './pages/games/animal-chain/game/game.component';
 import { AddAnimalComponent } from './pages/games/animal-chain/add-animal/add-animal.component';
 import { ThreejsAppComponent } from './pages/apps/threejs-app/threejs-app.component';
 import { CubeComponent } from './cube/cube.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -60,7 +61,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         }
       })
     ],
-    providers: [],
+    providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
