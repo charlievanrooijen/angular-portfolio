@@ -1,29 +1,49 @@
+/*********************
+ * Angular Components
+**********************/
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { LandingpageComponent } from './landingpage/landingpage.component';
-import { GamesComponent } from './games/games.component';
-import { AppsComponent } from './apps/apps.component';
-import { AboutComponent } from './about/about.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { KnappeKoppenComponent } from './pages/apps/knappe-koppe/knappe-koppe.component';
-import { AnimalChainComponent } from './pages/games/animal-chain/animal-chain.component';
-import { AnimalGuesserComponent } from './pages/games/animal-guesser/animal-guesser.component';
-import { TwentyThreePlusOneComponent } from './pages/apps/twenty-three-plus-one/twenty-three-plus-one.component';
-import { IntroComponent } from './pages/games/animal-chain/intro/intro.component';
-import { GameComponent } from './pages/games/animal-chain/game/game.component';
-import { AddAnimalComponent } from './pages/games/animal-chain/add-animal/add-animal.component';
-import { ThreejsAppComponent } from './pages/apps/threejs-app/threejs-app.component';
-import { CubeComponent } from './cube/cube.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { AppComponent } from './app.component';
+
+/**********
+ * Imports
+***********/
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+/***********
+* Templates
+************/
+import { NavbarComponent } from './templates/navbar/navbar.component';
+
+/********************
+ * Custom Components
+*********************/
+import { GameComponent } from './components/games/animal-chain/game/game.component';
+import { IntroComponent } from './components/games/animal-chain/intro/intro.component';
+import { AnimalChainComponent } from './components/games/animal-chain/animal-chain.component';
+import { AddAnimalComponent } from './components/games/animal-chain/add-animal/add-animal.component';
+import { AnimalGuesserComponent } from './components/games/animal-guesser/animal-guesser.component';
+import { TwentyThreePlusOneComponent } from './components/apps/twenty-three-plus-one/twenty-three-plus-one.component';
+import { ThreejsAppComponent } from './components/apps/threejs-app/threejs-app.component';
+import { KnappeKoppenComponent } from './components/apps/knappe-koppe/knappe-koppe.component';
+import { BarrelComponent } from './components/apps/threejs-app/3Dlib/barrel/barrel.component';
+
+/********
+ * Pages
+*********/
+import { LandingpageComponent } from './pages/landingpage/landingpage.component';
+import { GamesComponent } from './pages/games/games.component';
+import { AppsComponent } from './pages/apps/apps.component';
+import { AboutComponent } from './pages/about/about.component';
+import { FooterComponent } from './templates/footer/footer.component';
+
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -45,7 +65,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     GameComponent,
     AddAnimalComponent,
     ThreejsAppComponent,
-    CubeComponent,
+    FooterComponent,
+    BarrelComponent
   ],
   imports: [
     BrowserModule,

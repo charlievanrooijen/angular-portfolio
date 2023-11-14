@@ -1,0 +1,22 @@
+<div class="body container my-3">
+    <div class="d-flex flex-column">
+        <div class="d-flex flex-grow-1">
+            <div class="cardContainer bg-dark my-3 p-3 rounded w-100">
+                <h2 class="text-light">{{ 'appsPage.title' | translate }}</h2>
+            </div>
+        </div>
+        <div class="d-flex app-container flex-column flex-lg-row">
+            <div class="card-container p-1 rounded d-flex flex-column" *ngFor="let app of apps" [routerLink]="app.link">
+                <div class="d-flex card-content rounded flex-grow-1">
+                    <div class="d-flex flex-column flex-grow-1 app-details bg-secondary rounded p-3 h-100">
+                        <h2 class="text-light">{{ app.name }}</h2>
+                        <div class="d-flex image rounded bg-light overflow-hidden">
+                            <img [src]="app.image" alt="{{ app.name }}">
+                        </div>
+                        <p class="text-light">{{ app.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

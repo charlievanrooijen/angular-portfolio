@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { LandingpageComponent } from './landingpage/landingpage.component';
-import { GamesComponent } from './games/games.component';
-import { AppsComponent } from './apps/apps.component';
-import { AboutComponent } from './about/about.component';
+import { LandingpageComponent } from './pages/landingpage/landingpage.component';
+import { GamesComponent } from './pages/games/games.component';
+import { AppsComponent } from './pages/apps/apps.component';
+import { AboutComponent } from './pages/about/about.component';
 
-import { TwentyThreePlusOneComponent } from './pages/apps/twenty-three-plus-one/twenty-three-plus-one.component';
-import { KnappeKoppenComponent } from './pages/apps/knappe-koppe/knappe-koppe.component';
-import { ThreejsAppComponent } from './pages/apps/threejs-app/threejs-app.component';
-import { AnimalChainComponent } from './pages/games/animal-chain/animal-chain.component';
-import { AnimalGuesserComponent } from './pages/games/animal-guesser/animal-guesser.component';
-import { IntroComponent } from './pages/games/animal-chain/intro/intro.component';
-import { GameComponent } from './pages/games/animal-chain/game/game.component';
-import { AddAnimalComponent } from './pages/games/animal-chain/add-animal/add-animal.component';
+import { TwentyThreePlusOneComponent } from './components/apps/twenty-three-plus-one/twenty-three-plus-one.component';
+import { KnappeKoppenComponent } from './components/apps/knappe-koppe/knappe-koppe.component';
+import { ThreejsAppComponent } from './components/apps/threejs-app/threejs-app.component';
+import { AnimalChainComponent } from './components/games/animal-chain/animal-chain.component';
+import { AnimalGuesserComponent } from './components/games/animal-guesser/animal-guesser.component';
+import { IntroComponent } from './components/games/animal-chain/intro/intro.component';
+import { GameComponent } from './components/games/animal-chain/game/game.component';
+import { AddAnimalComponent } from './components/games/animal-chain/add-animal/add-animal.component';
 
 const routes: Routes = [
   { path: '', component: LandingpageComponent },
@@ -39,4 +39,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }
