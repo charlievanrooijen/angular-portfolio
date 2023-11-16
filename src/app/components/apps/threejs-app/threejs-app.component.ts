@@ -6,4 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./threejs-app.component.scss']
 })
 export class ThreejsAppComponent {
+  
 }
