@@ -7,7 +7,7 @@
         </div>
         <div class="d-flex app-container flex-column flex-lg-row">
             <div class="card-container p-1 rounded d-flex flex-column" *ngFor="let app of apps" [routerLink]="app.link">
-                <div class="d-flex card-content rounded flex-grow-1">
+                <div class="d-flex card-content rounded flex-grow-1 my-1">
                     <div class="d-flex flex-column flex-grow-1 app-details bg-secondary rounded p-3 h-100">
                         <h2 class="text-light">{{ app.name }}</h2>
                         <div class="d-flex image rounded bg-light overflow-hidden">
