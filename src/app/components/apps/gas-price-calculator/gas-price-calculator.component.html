@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="form-group mb-3">
+      <label for="carModel">Select Car Model:</label>
+      <select id="carModel" class="form-control" [(ngModel)]="selectedCar" (change)="onCarSelect()">
+        <option value="" disabled selected>Select your car</option>
+        <option *ngFor="let car of cars" [ngValue]="car.name">{{ car.name }}</option>
+      </select>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="distance">Distance (km):</label>
+      <input type="number" id="distance" class="form-control" [(ngModel)]="distance" step="0.1" min="0">
+    </div>
+    
+  <div class="form-group mb-3">
+    <label for="fuelUsageRate">Fuel Usage Rate (liters/100km):</label>
+    <input type="number" id="fuelUsageRate" class="form-control" [(ngModel)]="fuelUsageRate" step="0.1" min="0">
+  </div>
+
+    <div class="form-group mb-3">
+      <label for="gasPrice">Gas Price (per liter):</label>
+      <input type="number" id="gasPrice" class="form-control" [(ngModel)]="gasPrice" step="0.01" min="1.50" max="3.00">
+    </div>
+    
+    <button class="btn btn-primary w-100 p-3" (click)="calculateCost()">Calculate Cost</button>
+    
+    <div class="alert alert-info mt-3" *ngIf="totalCost > 0">
+      Total Cost: {{ totalCost | currency }}
+    </div>
+  </div>

@@ -14,6 +14,8 @@ import { AnimalGuesserComponent } from './components/games/animal-guesser/animal
 import { IntroComponent } from './components/games/animal-chain/intro/intro.component';
 import { GameComponent } from './components/games/animal-chain/game/game.component';
 import { AddAnimalComponent } from './components/games/animal-chain/add-animal/add-animal.component';
+import { GasPriceCalculatorComponent } from './components/apps/gas-price-calculator/gas-price-calculator.component';
+
 
 const routes: Routes = [
   { path: '', component: LandingpageComponent },
@@ -32,6 +34,7 @@ const routes: Routes = [
   { path: 'apps/23plusone', component: TwentyThreePlusOneComponent },
   { path: 'apps/knappe-koppe', component: KnappeKoppenComponent },
   { path: 'apps/threejs', component: ThreejsAppComponent },
+  { path: 'apps/gas-price-calculator', component: GasPriceCalculatorComponent },
   { path: 'about', component: AboutComponent }
 ];
 

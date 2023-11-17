@@ -34,6 +34,7 @@ import { TwentyThreePlusOneComponent } from './components/apps/twenty-three-plus
 import { ThreejsAppComponent } from './components/apps/threejs-app/threejs-app.component';
 import { KnappeKoppenComponent } from './components/apps/knappe-koppe/knappe-koppe.component';
 import { BarrelComponent } from './components/apps/threejs-app/3Dlib/barrel/barrel.component';
+import { GasPriceCalculatorComponent } from './components/apps/gas-price-calculator/gas-price-calculator.component';
 
 /********
  * Pages
@@ -66,7 +67,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     AddAnimalComponent,
     ThreejsAppComponent,
     FooterComponent,
-    BarrelComponent
+    BarrelComponent,
+    GasPriceCalculatorComponent
   ],
   imports: [
     BrowserModule,

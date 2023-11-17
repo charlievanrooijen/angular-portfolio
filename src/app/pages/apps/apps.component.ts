@@ -25,6 +25,12 @@ export class AppsComponent {
       description: 'Playground for showing 3D models',
       image: 'assets/images/apps/three.jpg',
       link: '/apps/threejs'
+    },
+    {
+      name: 'Fuel Cost Calculator',
+      description: 'Everyone asking you to drive you around? Use this to know what they owe you.',
+      image: 'assets/images/apps/car.jpg',
+      link: '/apps/gas-price-calculator'
     }
   ];
 
