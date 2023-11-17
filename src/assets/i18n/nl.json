@@ -49,6 +49,26 @@
             "alreadyGuessed": "Dier al geraden!",
             "shouldStartWith": "Dier moet beginnen met een {{char}}!"
         }
-    }
-  }
+    },
+    "gas-price-calculator": {
+      "label1" : "Selecteer Automodel:",
+      "label2" : "Afstand (km):",
+      "label3" : "Brandstofverbruik (liters/100km):",
+      "label4" : "Benzineprijs (per liter):",
+      "label5" : "Bereken Kosten",
+      "label6" : "Totale Kosten: "
+    },
+    "knappe-koppen": {
+      "textareaPlaceholder": "Voer uw onderwerpsjabloon in. Gebruik {kolomnaam} als placeholder.",
+      "textareaDefault": "Hallo {RecipientName}, ik probeerde contact met u op te nemen vanwege iets",
+      "buttonText": "Genereer Mailto",
+      "variablesHeader": "Beschikbare Variabelen",
+      "variablesInfo": "Dit is beschikbaar nadat u uw Excel-blad heeft geüpload",
+      "excelStructureHeader": "Structuur van Excel-bestand",
+      "expandInfoButton": "Info uitbreiden",
+      "structureNote": "Uw Excel-bestand moet deze structuur volgen:",
+      "fileHeadersNote": "Zorg ervoor dat de eerste rijen van uw Excel-bestand deze koppen bevat. (Recipient, RecipientName)",
+      "subjectPlaceholder": "Voer het onderwerp van de e-mail in"
+    }  
+}
   

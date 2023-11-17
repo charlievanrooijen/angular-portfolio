@@ -49,6 +49,26 @@
             "alreadyGuessed": "Animal already guessed!",
             "shouldStartWith": "Animal should start with {{char}}!"
         }
+    },
+    "gas-price-calculator": {
+      "label1" : "Select Car Model:",
+      "label2" : "Distance (km):",
+      "label3" : "Fuel Usage Rate (liters/100km):",
+      "label4" : "Gas Price (per liter):",
+      "label5" : "Calculate Cost",
+      "label6" : "Total Cost: "
+    },
+    "knappe-koppen": {
+      "textareaPlaceholder": "Enter your subject template. Use {columnName} as placeholder.",
+      "textareaDefault": "Hi {RecipientName}, I was trying to reach you because of something",
+      "buttonText": "Generate Mailto",
+      "variablesHeader": "Available Variables",
+      "variablesInfo": "This will be available after uploading your Excel sheet",
+      "excelStructureHeader": "Excel File Structure",
+      "expandInfoButton": "Expand info",
+      "structureNote": "Your Excel file should follow this structure:",
+      "fileHeadersNote": "Make sure the first row of your Excel file contains these headers.",
+      "subjectPlaceholder": "Enter the email subject"
     }
-  }
-  
+      
+}

@@ -14,6 +14,7 @@ export class KnappeKoppenComponent {
   @ViewChild('variableList') variableList!: ElementRef;
   @ViewChild('template') templateInput!: ElementRef;
   @ViewChild('mailtoLink') mailtoContainer!: ElementRef;  
+  @ViewChild('subjectInput') subjectInput!: ElementRef;
 
   handleFile(): void {
     
@@ -58,49 +59,57 @@ export class KnappeKoppenComponent {
       return;
     }
   
-    const template = this.templateInput.nativeElement.value;
+    const subjectTemplate = this.subjectInput.nativeElement.value;
+    const bodyTemplate = this.templateInput.nativeElement.value;
     this.mailtoContainer.nativeElement.innerHTML = '';
     let errorMessages: string[] = [];
   
     this.globalData.forEach((rowData, index) => {
-      // Check for required fields
-      if (!rowData["Recipient"]) {
+      if (!rowData["Recipient"] && index > 0) {
         errorMessages.push(`Row ${index + 1}: Missing 'Recipient'.`);
         return;
       }
   
-      if (!rowData["RecipientName"]) {
+      if (!rowData["RecipientName"] && index > 0) {
         errorMessages.push(`Row ${index + 1}: Missing 'RecipientName'.`);
         return;
       }
   
-      if (!rowData["Subject"]) {
-        errorMessages.push(`Row ${index + 1}: Missing 'Subject'.`);
-        return;
-      }
+      let finalSubject = subjectTemplate;
+      let finalBody = bodyTemplate;
   
-      let finalBody = template;
-  
-      // Find all variables in the template
-      const templateVariables = template.match(/{\w+}/g) || [];
-      for (const variable of templateVariables) {
+      const subjectVariables = subjectTemplate.match(/{\w+}/g) || [];
+      subjectVariables.forEach((variable: string) => {
+        const strippedVar = variable.replace(/{|}/g, "");
+        if (rowData[strippedVar] !== undefined) {
+          finalSubject = finalSubject.replace(new RegExp(variable, 'g'), rowData[strippedVar]);
+        } else {
+          errorMessages.push(`Row ${index + 1}: Variable '${variable}' is missing in data.`);
+        }
+      });
+
+      const bodyVariables = bodyTemplate.match(/{\w+}/g) || [];
+      bodyVariables.forEach((variable: string) => {
         const strippedVar = variable.replace(/{|}/g, "");
         if (rowData[strippedVar] !== undefined) {
           finalBody = finalBody.replace(new RegExp(variable, 'g'), rowData[strippedVar]);
         } else {
-          errorMessages.push(`Row ${index + 1}: Template uses '{${strippedVar}}' but corresponding data is missing.`);
+          errorMessages.push(`Row ${index + 1}: Variable '${variable}' is missing in data.`);
         }
-      }
+      });
   
-      const mailtoLink = `mailto:${encodeURIComponent(rowData["Recipient"])}?subject=${encodeURIComponent(rowData["Subject"])}&body=${encodeURIComponent(finalBody)}`;
+      const mailtoLink = `mailto:${encodeURIComponent(rowData["Recipient"])}?subject=${encodeURIComponent(finalSubject)}&body=${encodeURIComponent(finalBody)}`;
       const linkElement = document.createElement('a');
       linkElement.href = mailtoLink;
       linkElement.classList.add("btn", "btn-success", "mt-1");
       linkElement.innerText = `Send to ${rowData["Recipient"]}`;
       this.mailtoContainer.nativeElement.appendChild(linkElement);
+  
+      // Add a line break after each link
+      const breakElement = document.createElement('br');
+      this.mailtoContainer.nativeElement.appendChild(breakElement);
     });
   
-    // Display error messages
     if (errorMessages.length > 0) {
       alert(`Errors:\n\n${errorMessages.join('\n')}`);
     }
