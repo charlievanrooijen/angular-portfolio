@@ -29,7 +29,6 @@ import { GameComponent } from './components/games/animal-chain/game/game.compone
 import { IntroComponent } from './components/games/animal-chain/intro/intro.component';
 import { AnimalChainComponent } from './components/games/animal-chain/animal-chain.component';
 import { AddAnimalComponent } from './components/games/animal-chain/add-animal/add-animal.component';
-import { AnimalGuesserComponent } from './components/games/animal-guesser/animal-guesser.component';
 import { TwentyThreePlusOneComponent } from './components/apps/twenty-three-plus-one/twenty-three-plus-one.component';
 import { ThreejsAppComponent } from './components/apps/threejs-app/threejs-app.component';
 import { KnappeKoppenComponent } from './components/apps/knappe-koppe/knappe-koppe.component';
@@ -60,7 +59,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     NavbarComponent,
     KnappeKoppenComponent,
     AnimalChainComponent,
-    AnimalGuesserComponent,
     TwentyThreePlusOneComponent,
     IntroComponent,
     GameComponent,
