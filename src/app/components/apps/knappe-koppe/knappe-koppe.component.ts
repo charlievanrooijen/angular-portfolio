@@ -22,9 +22,7 @@ export class KnappeKoppenComponent {
       console.error("File input is not ready yet.");
       return;
   }
-  const file = this.fileInput.nativeElement.files[0];
-  
-
+    const file = this.fileInput.nativeElement.files[0];
     const reader = new FileReader();
 
     reader.onload = (e: any) => {

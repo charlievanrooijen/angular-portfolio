@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { KnappeKoppenComponent } from './knappe-koppe.component';
 
 describe('KnappeKoppeComponent', () => {

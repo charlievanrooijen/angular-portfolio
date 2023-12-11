@@ -14,9 +14,10 @@ export class GasPriceCalculatorComponent {
   selectedCar: string = '';
   
   cars = [
-    { name: 'Renault Twingo', consumption: 5.4 },
+    { name: 'Renault Twingo 2008', consumption: 5.7 },
     { name: 'Volkswagen Golf', consumption: 6.0 },
     { name: 'Toyota Prius', consumption: 4.4 },
+    { name: 'Ford Probe V16', consumption: 7.8 }
   ];
 
   constructor() {
