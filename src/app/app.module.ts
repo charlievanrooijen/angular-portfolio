@@ -43,6 +43,7 @@ import { GamesComponent } from './pages/games/games.component';
 import { AppsComponent } from './pages/apps/apps.component';
 import { AboutComponent } from './pages/about/about.component';
 import { FooterComponent } from './templates/footer/footer.component';
+import { UniversalSchedulerComponent } from './components/apps/universal-scheduler/universal-scheduler.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -66,7 +67,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ThreejsAppComponent,
     FooterComponent,
     BarrelComponent,
-    GasPriceCalculatorComponent
+    GasPriceCalculatorComponent,
+    UniversalSchedulerComponent
   ],
   imports: [
     BrowserModule,

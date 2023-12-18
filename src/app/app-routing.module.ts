@@ -14,6 +14,7 @@ import { IntroComponent } from './components/games/animal-chain/intro/intro.comp
 import { GameComponent } from './components/games/animal-chain/game/game.component';
 import { AddAnimalComponent } from './components/games/animal-chain/add-animal/add-animal.component';
 import { GasPriceCalculatorComponent } from './components/apps/gas-price-calculator/gas-price-calculator.component';
+import { UniversalSchedulerComponent } from './components/apps/universal-scheduler/universal-scheduler.component';
 
 
 const routes: Routes = [
@@ -32,6 +33,7 @@ const routes: Routes = [
   { path: 'apps/knappe-koppe', component: KnappeKoppenComponent },
   { path: 'apps/threejs', component: ThreejsAppComponent },
   { path: 'apps/gas-price-calculator', component: GasPriceCalculatorComponent },
+  { path: 'apps/universal-scheduler', component: UniversalSchedulerComponent },
   { path: 'about', component: AboutComponent }
 ];
 
