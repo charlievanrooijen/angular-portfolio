@@ -27,7 +27,7 @@ export class AppsComponent {
       link: '/apps/knappe-koppe'
     },
     {
-      name: 'Three.js App',
+      name: 'ThreeJsApp',
       description: 'Playground for showing 3D models',
       image: 'assets/images/apps/three.jpg',
       link: '/apps/threejs'

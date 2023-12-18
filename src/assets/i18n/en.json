@@ -1,74 +1,95 @@
 {
-    "landing": {
-      "greeting": "Hello World!",
-      "projects": "Welcome, I'm Charlie. A developer transitioning into game design, this is where I showcase my work. I also offer tutoring for aspiring web developers to master the basics of web development."
-    },  
-    "navbar": {
-      "home": "Home",
-      "games": "Games",
-      "apps": "Apps",
-      "about": "About Me/CV"
+  "landing": {
+    "greeting": "Hello World!",
+    "projects": "Welcome, I'm Charlie. A developer transitioning into game design, this is where I showcase my work. I also offer tutoring for aspiring web developers to master the basics of web development."
+  },
+  "navbar": {
+    "home": "Home",
+    "games": "Games",
+    "apps": "Apps",
+    "about": "About Me/CV"
+  },
+  "gamesPage": {
+    "title": "Games",
+    "details": "Details"
+  },
+  "appsPage": {
+    "title": "Apps",
+    "details": "Details"
+  },
+  "apps": {
+    "UniversalScheduler": {
+      "title": "Universal Scheduler",
+      "description": "Schedule your meetings no matter where on the globe you are."
     },
-    "gamesPage": {
-      "title": "Games",
-      "details": "Details"
+    "Fuel Cost Calculator": {
+      "title": "Fuel Cost Calculator",
+      "description": "Everyone asking you to drive them around? Use this to know what they owe you."
     },
-    "appsPage": {
-      "title": "Apps",
-      "details": "Details"
+    "knappekoppen": {
+      "title": "Knappe Koppen",
+      "description": "A tool used for creating mail templates from an Excel sheet and a mail template, and gives a mailto link with a mail template."
     },
-    "about": {
-      "tutoring-title" : "Web Development Tutoring: Pay Only If You Understand!",
-      "tutoring" : "Struggling with the fundamentals of web development? Want to build a solid foundation in HTML, CSS, and Vanilla JavaScript? I offer customized tutoring designed to construct your knowledge from the ground up. Inspired by the educational philosophy of my rugby coach, I promise: if you don't understand after our session, that's on me. Interested? Send me a message on linkedin",
-      "Work Experience": "Work Experience",
-      "Back End Developer": "Back End Developer",
-      "Garden Connect | Garden Retail Marketing": "Garden Connect | Garden Retail Marketing",
-      "Garden Connect description": "Garden Connect develops websites for garden centers. Here I gained knowledge of Symfony, PHP, SQL, and Postman. Tasks included adding new features to the CMS and bug fixing.",
-      "Consultant": "Consultant",
-      "Devoteam": "Devoteam",
-      "Devoteam description": "Devoteam is involved in Cloud, Integration, Data, and DevOps. I gained knowledge about integration consultancy here. It mainly consisted of REST APIs, AZURE, JAVA, and Mulesoft.",
-      "Intern": "Intern",
-      "4BIS Innovations B.V.": "4BIS Innovations B.V.",
-      "4BIS description": "4BIS has a varied income of projects that I could work on with support. A lot of knowledge about Nodejs, JQuery, and PHP was imparted to me here. I also learned a large part of my front-end skills here.",
-      "Junior Software Developer": "Junior Software Developer",
-      "Winst uit je woning": "Profit from your home",
-      "Winst description": "Here I programmed functions in PHP and handled bugs.",
-      "Education": "Education",
-      "Codam Coding College": "Codam Coding College",
-      "Codam description": "For 4 weeks, I participated in CODAM's 'Piscine' - a follow-up training for software engineers. The 'Piscine' (French for 'swimming pool') is a training and selection period of four weeks. During these weeks I worked on various projects in C. Thanks to this period, I realized that I wanted to delve into Game Design and Development.",
-      "Nova College": "Nova College",
-      "Nova description": "At Nova College, I was able to lay a foundation for starting in Web and app development."
+    "Three.JsApp": {
+      "title": "Three.js App",
+      "description": "Playground for showing 3D models."
     },
-    "animalChain": {
-        "title": "Animal Chain",
-        "guessPlaceholder": "Guess an animal...",
-        "guessButton": "Guess",
-        "guessedAnimalsTitle": "Guessed Animals:",
-        "errors": {
-            "notInList": "Animal not in our list!",
-            "alreadyGuessed": "Animal already guessed!",
-            "shouldStartWith": "Animal should start with {{char}}!"
-        }
-    },
-    "gas-price-calculator": {
-      "label1" : "Select Car Model:",
-      "label2" : "Distance (km):",
-      "label3" : "Fuel Usage Rate (liters/100km):",
-      "label4" : "Gas Price (per liter):",
-      "label5" : "Calculate Cost",
-      "label6" : "Total Cost: "
-    },
-    "knappe-koppen": {
-      "textareaPlaceholder": "Enter your subject template. Use {columnName} as placeholder.",
-      "textareaDefault": "Hi {RecipientName}, I was trying to reach you because of something",
-      "buttonText": "Generate Mailto",
-      "variablesHeader": "Available Variables",
-      "variablesInfo": "This will be available after uploading your Excel sheet",
-      "excelStructureHeader": "Excel File Structure",
-      "expandInfoButton": "Expand info",
-      "structureNote": "Your Excel file should follow this structure:",
-      "fileHeadersNote": "Make sure the first row of your Excel file contains these headers.",
-      "subjectPlaceholder": "Enter the email subject"
+    "23plusone": {
+      "title": "23plusone",
+      "description": "A wheel of fortune made for 23plusone. 23plusone is a scientific method that identifies 24 fundamental human values that people strive for in order to be happy."
     }
-      
+  },
+  "about": {
+    "tutoring-title": "Web Development Tutoring: Pay Only If You Understand!",
+    "tutoring": "Struggling with the fundamentals of web development? Want to build a solid foundation in HTML, CSS, and Vanilla JavaScript? I offer customized tutoring designed to construct your knowledge from the ground up. Inspired by the educational philosophy of my rugby coach, I promise: if you don't understand after our session, that's on me. Interested? Send me a message on linkedin",
+    "Work Experience": "Work Experience",
+    "Back End Developer": "Back End Developer",
+    "Garden Connect | Garden Retail Marketing": "Garden Connect | Garden Retail Marketing",
+    "Garden Connect description": "Garden Connect develops websites for garden centers. Here I gained knowledge of Symfony, PHP, SQL, and Postman. Tasks included adding new features to the CMS and bug fixing.",
+    "Consultant": "Consultant",
+    "Devoteam": "Devoteam",
+    "Devoteam description": "Devoteam is involved in Cloud, Integration, Data, and DevOps. I gained knowledge about integration consultancy here. It mainly consisted of REST APIs, AZURE, JAVA, and Mulesoft.",
+    "Intern": "Intern",
+    "4BIS Innovations B.V.": "4BIS Innovations B.V.",
+    "4BIS description": "4BIS has a varied income of projects that I could work on with support. A lot of knowledge about Nodejs, JQuery, and PHP was imparted to me here. I also learned a large part of my front-end skills here.",
+    "Junior Software Developer": "Junior Software Developer",
+    "Winst uit je woning": "Profit from your home",
+    "Winst description": "Here I programmed functions in PHP and handled bugs.",
+    "Education": "Education",
+    "Codam Coding College": "Codam Coding College",
+    "Codam description": "For 4 weeks, I participated in CODAM's 'Piscine' - a follow-up training for software engineers. The 'Piscine' (French for 'swimming pool') is a training and selection period of four weeks. During these weeks I worked on various projects in C. Thanks to this period, I realized that I wanted to delve into Game Design and Development.",
+    "Nova College": "Nova College",
+    "Nova description": "At Nova College, I was able to lay a foundation for starting in Web and app development."
+  },
+  "animalChain": {
+    "title": "Animal Chain",
+    "guessPlaceholder": "Guess an animal...",
+    "guessButton": "Guess",
+    "guessedAnimalsTitle": "Guessed Animals:",
+    "errors": {
+      "notInList": "Animal not in our list!",
+      "alreadyGuessed": "Animal already guessed!",
+      "shouldStartWith": "Animal should start with {{char}}!"
+    }
+  },
+  "gas-price-calculator": {
+    "label1": "Select Car Model:",
+    "label2": "Distance (km):",
+    "label3": "Fuel Usage Rate (liters/100km):",
+    "label4": "Gas Price (per liter):",
+    "label5": "Calculate Cost",
+    "label6": "Total Cost: "
+  },
+  "knappe-koppen": {
+    "textareaPlaceholder": "Enter your subject template. Use {columnName} as placeholder.",
+    "textareaDefault": "Hi {RecipientName}, I was trying to reach you because of something",
+    "buttonText": "Generate Mailto",
+    "variablesHeader": "Available Variables",
+    "variablesInfo": "This will be available after uploading your Excel sheet",
+    "excelStructureHeader": "Excel File Structure",
+    "expandInfoButton": "Expand info",
+    "structureNote": "Your Excel file should follow this structure:",
+    "fileHeadersNote": "Make sure the first row of your Excel file contains these headers.",
+    "subjectPlaceholder": "Enter the email subject"
+  }
 }
