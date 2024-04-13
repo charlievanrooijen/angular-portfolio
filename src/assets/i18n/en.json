@@ -30,7 +30,7 @@
       "title": "Knappe Koppen",
       "description": "A tool used for creating mail templates from an Excel sheet and a mail template, and gives a mailto link with a mail template."
     },
-    "Three.JsApp": {
+    "ThreeJsApp": {
       "title": "Three.js App",
       "description": "Playground for showing 3D models."
     },
@@ -40,6 +40,8 @@
     }
   },
   "about": {
+    "360Fashion" : "360Fashion",
+    "360Fashion description" : "working on the 360Fashion maze game as game designer/developer. Creating different mechanics in VR using the Unity engine.",
     "tutoring-title": "Web Development Tutoring: Pay Only If You Understand!",
     "tutoring": "Struggling with the fundamentals of web development? Want to build a solid foundation in HTML, CSS, and Vanilla JavaScript? I offer customized tutoring designed to construct your knowledge from the ground up. Inspired by the educational philosophy of my rugby coach, I promise: if you don't understand after our session, that's on me. Interested? Send me a message on linkedin",
     "Work Experience": "Work Experience",
