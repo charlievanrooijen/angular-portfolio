@@ -1,4 +1,4 @@
-<div class="body container my-3">
+<div class="body container">
     <div class="d-flex app-container flex-column flex-lg-row">
         <div class="card-container p-1 rounded d-flex flex-column w-100" *ngFor="let app of apps" [routerLink]="app.link">
             <div class="d-flex card-content rounded flex-grow-1">
@@ -13,3 +13,5 @@
         </div>
     </div>
 </div>
+
+<app-footer></app-footer>

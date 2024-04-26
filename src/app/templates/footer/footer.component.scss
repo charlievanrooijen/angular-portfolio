@@ -1,0 +1,17 @@
+.footerContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--dl-color-custom-neutral-dark);
+    span{
+        color: #fff;
+        margin-left: 2rem;
+    }
+    .footer-text{
+        font-size: 12px;
+    }
+}
+  

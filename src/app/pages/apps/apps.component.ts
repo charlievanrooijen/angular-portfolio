@@ -27,12 +27,6 @@ export class AppsComponent {
       link: '/apps/knappe-koppe'
     },
     {
-      name: 'ThreeJsApp',
-      description: 'Playground for showing 3D models',
-      image: 'assets/images/apps/three.jpg',
-      link: '/apps/threejs'
-    },
-    {
       name: '23plusone',
       description: 'A wheel of fortune made for 23plusone. 23plusone is a scientific method that identifies 24 fundamental human values that people strive for in order to be happy.',
       image: 'assets/images/apps/wheel.png',

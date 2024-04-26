@@ -1,98 +1,118 @@
 {
   "landing": {
-    "greeting": "Hallo wereld!",
-    "projects": "Welkom, ik ben Charlie. Als ontwikkelaar met een passie voor game design deel ik hier mijn projecten. Ook bied ik bijles aan voor beginnende webontwikkelaars om de fundamenten van webontwikkeling onder de knie te krijgen."
+    "heroHeading": "Welkom op mijn portfolio",
+    "featuresTitle": "Bekijk mijn projecten",
+    "appShowcaseTitle": "App Showcase",
+    "appShowcaseText": "Ontdek mijn nieuwste en meest populaire apps",
+    "gameShowcaseTitle": "Game Showcase",
+    "gameShowcaseText": "Verken mijn spannende en verslavende games",
+    "servicesHeading": "Ook maak ik deel uit van het bedrijf RodeLam, dit zijn de diensten die we aanbieden",
+    "webDevTitle": "Webontwikkeling",
+    "webDevText": "Bouwen van responsieve en op maat gemaakte websites.",
+    "mobileAppTitle": "Mobiele Applicaties",
+    "mobileAppText": "Ontwerpen van gebruiksvriendelijke mobiele oplossingen.",
+    "apiIntegrationTitle": "API Integratie",
+    "apiIntegrationText": "Integratie en implementatie van op maat gemaakte API's.",
+    "ctaHeading": "Klaar om te beginnen?",
+    "ctaText": "Neem nu contact met ons op of plan een consultatie om uw project te bespreken.",
+    "ctaButtonText": "Neem contact op"
   },
-    "navbar": {
-      "home": "Home",
-      "games": "Games",
-      "apps": "Apps",
-      "about": "Over Mij/CV"
+  "footer": {
+    "navAboutMe": "Over mij",
+    "navApps": "Apps",
+    "navGames": "Games",
+    "copyrightText": "© 2023 Rodelam, Alle rechten voorbehouden."
+  },
+  "navbar": {
+    "home": "Home",
+    "games": "Games",
+    "apps": "Apps",
+    "about": "Over Mij/CV"
+  },
+  "gamesPage": {
+    "title": "Spellen",
+    "details": "Details"
+  },
+  "appsPage": {
+    "title": "Apps",
+    "details": "Details"
+  },
+  "apps": {
+    "UniversalScheduler": {
+      "title": "Universele Planner",
+      "description": "Plan uw vergaderingen waar u ook bent op de wereld."
     },
-    "gamesPage": {
-      "title": "Spellen",
-      "details": "Details"
+    "FuelCostCalculator": {
+      "title": "Brandstofkosten Calculator",
+      "description": "Iedereen vraagt je om hen rond te rijden? Gebruik dit om te weten wat ze je schuldig zijn."
     },
-    "appsPage": {
-      "title": "Apps",
-      "details": "Details"
+    "KnappeKoppen": {
+      "title": "Knappe Koppen",
+      "description": "Een hulpmiddel voor het maken van mailsjablonen vanuit een Excel-blad en een mailsjabloon, en geeft een mailto-link met een mailsjabloon."
     },
-    "apps": {
-      "UniversalScheduler": {
-        "title": "Universele Planner",
-        "description": "Plan uw vergaderingen waar u ook bent op de wereld."
-      },
-      "FuelCostCalculator": {
-        "title": "Brandstofkosten Calculator",
-        "description": "Iedereen vraagt je om hen rond te rijden? Gebruik dit om te weten wat ze je schuldig zijn."
-      },
-      "KnappeKoppen": {
-        "title": "Knappe Koppen",
-        "description": "Een hulpmiddel voor het maken van mailsjablonen vanuit een Excel-blad en een mailsjabloon, en geeft een mailto-link met een mailsjabloon."
-      },
-      "ThreeJsApp": {
-        "title": "Three.js App",
-        "description": "Speeltuin voor het tonen van 3D-modellen."
-      },
-      "23plusone": {
-        "title": "23plusone",
-        "description": "Een rad van fortuin gemaakt voor 23plusone. 23plusone is een wetenschappelijke methode die 24 fundamentele menselijke waarden identificeert waar mensen naar streven om gelukkig te zijn."
-      }
+    "ThreeJsApp": {
+      "title": "Three.js App",
+      "description": "Speeltuin voor het tonen van 3D-modellen."
     },
-    "about": {
-      "360Fashion" : "360Fashion",
-      "360Fashion description" : "Werken aan de 360 fashion game, verschillende mechanics uitprogrameren in VR. Samen met het werken in een teamverband met programmeurs en 3D modeleurs voor het ondwerpen van de game.",
-      "tutoring-title" : "Bijles Webdevelopment: Betaal alleen als je het begrijpt!",
-      "tutoring" : "Vind je de basisprincipes van webdevelopment lastig? Wil je een solide fundament leggen in HTML, CSS en Vanilla JavaScript? Ik bied op maat gemaakte bijles aan die jouw kennis van de grond af opbouwt. Geïnspireerd door mijn rugbycoach, beloof ik: als je het niet begrijpt na onze sessie, dan is dat mijn verantwoordelijkheid. Wil je mij berijken over bijles? Stuur mij dan een berichtje op linkedin",
-      "Work Experience": "Werkervaring",
-      "Back End Developer": "Back End Ontwikkelaar",
-      "Garden Connect | Garden Retail Marketing": "Garden Connect | Garden Retail Marketing",
-      "Garden Connect description": "Garden Connect ontwikkelt websites voor tuincentra. Hier heb ik kennis opgedaan van Symfony, PHP, SQL, en Postman. Werkzaamheden omvatten het toevoegen van nieuwe functies aan het CMS en het oplossen van bugs.",
-      "Consultant": "Consultant",
-      "Devoteam": "Devoteam",
-      "Devoteam description": "Devoteam houdt zich bezig met Cloud, Integratie, Data, en DevOps. Hier heb ik kennis opgedaan over integratie consultancy. Dit bestond voornamelijk uit REST APIs, AZURE, JAVA, en Mulesoft.",
-      "Intern": "Stagiair",
-      "4BIS Innovations B.V.": "4BIS Innovations B.V.",
-      "4BIS description": "4BIS heeft diverse projecten waarbij ik kon bijdragen met ondersteuning. Hier heb ik veel geleerd over Nodejs, JQuery, en PHP. Ook heb ik hier veel van mijn front-end vaardigheden geleerd.",
-      "Junior Software Developer": "Junior Software Ontwikkelaar",
-      "Winst uit je woning": "Winst uit je Woning",
-      "Winst description": "Hier programmeerde ik functies in PHP en handelde bugs af.",
-      "Education": "Opleidingen",
-      "Codam Coding College": "Codam Coding College",
-      "Codam description": "Gedurende 4 weken heb ik deelgenomen aan de 'Piscine' van CODAM - een vervolgopleiding voor software engineers. De 'Piscine' is een trainings- en selectieperiode van vier weken. Gedurende deze weken werkte ik aan verschillende projecten in C. Dankzij deze periode besefte ik dat ik me vooral wilde verdiepen in Game Design en Development.",
-      "Nova College": "Nova College",
-      "Nova description": "Bij het Nova College heb ik een fundering kunnen leggen voor het beginnen in Web en app ontwikkeling."
-    },
-    "animalChain": {
-        "title": "Dierenspel",
-        "guessPlaceholder": "Raad een dier...",
-        "guessButton": "Raad",
-        "guessedAnimalsTitle": "Geraden dieren:",
-        "errors": {
-            "notInList": "Dier niet in onze lijst!",
-            "alreadyGuessed": "Dier al geraden!",
-            "shouldStartWith": "Dier moet beginnen met een {{char}}!"
-        }
-    },
-    "gas-price-calculator": {
-      "label1" : "Selecteer Automodel:",
-      "label2" : "Afstand (km):",
-      "label3" : "Brandstofverbruik (liters/100km):",
-      "label4" : "Benzineprijs (per liter):",
-      "label5" : "Bereken Kosten",
-      "label6" : "Totale Kosten: "
-    },
-    "knappe-koppen": {
-      "textareaPlaceholder": "Voer uw onderwerpsjabloon in. Gebruik {kolomnaam} als placeholder.",
-      "textareaDefault": "Hallo {RecipientName}, ik probeerde contact met u op te nemen vanwege iets",
-      "buttonText": "Genereer Mailto",
-      "variablesHeader": "Beschikbare Variabelen",
-      "variablesInfo": "Dit is beschikbaar nadat u uw Excel-blad heeft geüpload",
-      "excelStructureHeader": "Structuur van Excel-bestand",
-      "expandInfoButton": "Info uitbreiden",
-      "structureNote": "Uw Excel-bestand moet deze structuur volgen:",
-      "fileHeadersNote": "Zorg ervoor dat de eerste rijen van uw Excel-bestand deze koppen bevat. (Recipient, RecipientName)",
-      "subjectPlaceholder": "Voer het onderwerp van de e-mail in"
-    }  
+    "23plusone": {
+      "title": "23plusone",
+      "description": "Een rad van fortuin gemaakt voor 23plusone. dit was een van mijn eerste projecten."
+    }
+  },
+  "about": {
+    "360Fashion": "360Fashion",
+    "360Fashion description": "Werken aan de 360 fashion game, verschillende mechanics uitprogrameren in VR. Samen met het werken in een teamverband met programmeurs en 3D modeleurs voor het ontwerpen van de game.",
+    "tutoring-title": "Bijles Webdevelopment: Betaal alleen als je het begrijpt!",
+    "tutoring": "Vind je de basisprincipes van webdevelopment lastig? Wil je een solide fundament leggen in HTML, CSS en Vanilla JavaScript? Ik bied op maat gemaakte bijles aan die jouw kennis van de grond af opbouwt. Geïnspireerd door mijn rugbycoach, beloof ik: als je het niet begrijpt na onze sessie, dan is dat mijn verantwoordelijkheid. Wil je mij berijken over bijles? Stuur mij dan een berichtje op linkedin",
+    "Work Experience": "Werkervaring",
+    "Back End Developer": "Back End Ontwikkelaar",
+    "Garden Connect | Garden Retail Marketing": "Garden Connect | Garden Retail Marketing",
+    "Garden Connect description": "Garden Connect ontwikkelt websites voor tuincentra. Hier heb ik kennis opgedaan van Symfony, PHP, SQL, en Postman. Werkzaamheden omvatten het toevoegen van nieuwe functies aan het CMS en het oplossen van bugs.",
+    "Consultant": "Consultant",
+    "Devoteam": "Devoteam",
+    "Devoteam description": "Devoteam houdt zich bezig met Cloud, Integratie, Data, en DevOps. Hier heb ik kennis opgedaan over integratie consultancy. Dit bestond voornamelijk uit REST APIs, AZURE, JAVA, en Mulesoft.",
+    "Intern": "Stagiair",
+    "4BIS Innovations B.V.": "4BIS Innovations B.V.",
+    "4BIS description": "4BIS heeft diverse projecten waarbij ik kon bijdragen met ondersteuning. Hier heb ik veel geleerd over Nodejs, JQuery, en PHP. Ook heb ik hier veel van mijn front-end vaardigheden geleerd.",
+    "Junior Software Developer": "Junior Software Ontwikkelaar",
+    "Winst uit je woning": "Winst uit je Woning",
+    "Winst description": "Hier programmeerde ik functies in PHP en handelde bugs af.",
+    "Education": "Opleidingen",
+    "Codam Coding College": "Codam Coding College",
+    "Codam description": "Gedurende 4 weken heb ik deelgenomen aan de 'Piscine' van CODAM - een vervolgopleiding voor software engineers. De 'Piscine' is een trainings- en selectieperiode van vier weken. Gedurende deze weken werkte ik aan verschillende projecten in C. Dankzij deze periode besefte ik dat ik me vooral wilde verdiepen in Game Design en Development.",
+    "Nova College": "Nova College",
+    "Nova description": "Bij het Nova College heb ik een fundering kunnen leggen voor het beginnen in Web en app ontwikkeling."
+  },
+  "animalChain": {
+    "title": "Dierenspel",
+    "AnimalText" : "Kijk hoever je kan blijven doorgaan. Noem een dier op, en nog een die begint met de letter waar het vorige dier op eindigde!",
+    "guessPlaceholder": "Raad een dier...",
+    "guessButton": "Raad",
+    "guessedAnimalsTitle": "Geraden dieren:",
+    "errors": {
+      "notInList": "Dier niet in onze lijst!",
+      "alreadyGuessed": "Dier al geraden!",
+      "shouldStartWith": "Dier moet beginnen met een {{char}}!"
+    }
+  },
+  "gas-price-calculator": {
+    "label1": "Selecteer Automodel:",
+    "label2": "Afstand (km):",
+    "label3": "Brandstofverbruik (liters/100km):",
+    "label4": "Benzineprijs (per liter):",
+    "label5": "Bereken Kosten",
+    "label6": "Totale Kosten: "
+  },
+  "knappe-koppen": {
+    "textareaPlaceholder": "Voer uw onderwerpsjabloon in. Gebruik {kolomnaam} als placeholder.",
+    "textareaDefault": "Hallo {RecipientName}, ik probeerde contact met u op te nemen vanwege iets",
+    "buttonText": "Genereer Mailto",
+    "variablesHeader": "Beschikbare Variabelen",
+    "variablesInfo": "Dit is beschikbaar nadat u uw Excel-blad heeft geüpload",
+    "excelStructureHeader": "Structuur van Excel-bestand",
+    "expandInfoButton": "Info uitbreiden",
+    "structureNote": "Uw Excel-bestand moet deze structuur volgen:",
+    "fileHeadersNote": "Zorg ervoor dat de eerste rijen van uw Excel-bestand deze koppen bevat. (Recipient, RecipientName)",
+    "subjectPlaceholder": "Voer het onderwerp van de e-mail in"
+  }
 }
-  

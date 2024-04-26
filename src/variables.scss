@@ -10,11 +10,15 @@ $dark-color: #222831;
 $dark-color-rgb: 34, 40, 49; 
 $dark-color-hover: #373c42;
 
-$info-color: #D0E7FE; 
+$info-color: #93abc2; 
 $info-color-rgb: 116, 189, 224; 
 $info-color-hover: #A1E1FA;
 
 :root {
+    --dl-color-custom-neutral-dark: #302d2d;
+    --dl-color-custom-neutral-light: #FFFFFF;
+    --dl-color-custom-secondary: #161616;
+
     // buttons
     .btn-primary{
         --bs-btn-color: #fff;
@@ -72,9 +76,6 @@ $info-color-hover: #A1E1FA;
         --bs-primary-bg: #{$primary-color-rgb};
     }
     
-    .bg-secondary{
-        --bs-secondary-bg: #{$secondary-color-rgb};
-    }
     
     .bg-info{
         --bs-info-bg: #{$info-color-rgb};
@@ -83,4 +84,12 @@ $info-color-hover: #A1E1FA;
     .bg-dark{
         --bs-dark-bg: #{$dark-color-rgb};
     }
+
+    // text
+    .text-dark{
+        color: #{$primary-color};
+    }
+}
+.bg-secondary{
+    background-color: --dl-color-custom-secondary;
 }

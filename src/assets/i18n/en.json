@@ -1,7 +1,27 @@
 {
   "landing": {
-    "greeting": "Hello World!",
-    "projects": "Welcome, I'm Charlie. A developer transitioning into game design, this is where I showcase my work. I also offer tutoring for aspiring web developers to master the basics of web development."
+    "heroHeading": "Welcome to My Portfolio",
+    "featuresTitle": "See my projects",
+    "appShowcaseTitle": "App Showcase",
+    "appShowcaseText": "Discover my latest and most popular apps",
+    "gameShowcaseTitle": "Game Showcase",
+    "gameShowcaseText": "Explore my exciting and addictive games",
+    "servicesHeading": "I'm also part of the company RodeLam, these are the services we offer",
+    "webDevTitle": "Web Development",
+    "webDevText": "Building responsive and tailor-made websites.",
+    "mobileAppTitle": "Mobile Applications",
+    "mobileAppText": "Crafting user-friendly mobile solutions.",
+    "apiIntegrationTitle": "API Integration",
+    "apiIntegrationText": "Integrating and deploying custom APIs.",
+    "ctaHeading": "Ready to Start?",
+    "ctaText": "Contact us now or book a consultation to discuss your project.",
+    "ctaButtonText": "Get in Touch"
+  },
+  "footer": {
+    "navAboutMe": "About Me",
+    "navApps": "Apps",
+    "navGames": "Games",
+    "copyrightText": "© 2023 Rodelam, All Rights Reserved."
   },
   "navbar": {
     "home": "Home",
@@ -36,7 +56,7 @@
     },
     "23plusone": {
       "title": "23plusone",
-      "description": "A wheel of fortune made for 23plusone. 23plusone is a scientific method that identifies 24 fundamental human values that people strive for in order to be happy."
+      "description": "A wheel of fortune made for 23plusone. this was one of my first projects i made"
     }
   },
   "about": {
@@ -65,6 +85,7 @@
   },
   "animalChain": {
     "title": "Animal Chain",
+    "AnimalText" : "Join the animal chain adventure and see how far you can go. Start by naming an animal, then continue the chain!",
     "guessPlaceholder": "Guess an animal...",
     "guessButton": "Guess",
     "guessedAnimalsTitle": "Guessed Animals:",

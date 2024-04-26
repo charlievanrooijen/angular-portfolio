@@ -1,1 +1,18 @@
-<p>footer works!</p>
+<footer class="footerContainer">
+    <div class="home-container4 mb-5">
+        <nav class="home-nav1">
+            <a style="all: unset;" routerLink="/about">
+                <span>{{ 'footer.navAboutMe' | translate }}</span>
+            </a>
+            <a style="all: unset;" routerLink="/apps">
+                <span>{{ 'footer.navApps' | translate }}</span>
+            </a>
+            <a style="all: unset;" routerLink="/games">
+                    <span>{{ 'footer.navGames' | translate }}</span>
+            </a>
+        </nav>
+    </div>
+    <div class="home-container5">
+        <span class="footer-text">{{ 'footer.copyrightText' | translate }}</span>
+    </div>
+</footer>

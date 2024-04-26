@@ -4,11 +4,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { LandingpageComponent } from './pages/landingpage/landingpage.component';
 import { GamesComponent } from './pages/games/games.component';
 import { AppsComponent } from './pages/apps/apps.component';
-import { AboutComponent } from './pages/about/about.component';
 
 import { TwentyThreePlusOneComponent } from './components/apps/twenty-three-plus-one/twenty-three-plus-one.component';
 import { KnappeKoppenComponent } from './components/apps/knappe-koppe/knappe-koppe.component';
-import { ThreejsAppComponent } from './components/apps/threejs-app/threejs-app.component';
 import { AnimalChainComponent } from './components/games/animal-chain/animal-chain.component';
 import { IntroComponent } from './components/games/animal-chain/intro/intro.component';
 import { GameComponent } from './components/games/animal-chain/game/game.component';
@@ -31,10 +29,8 @@ const routes: Routes = [
   { path: 'apps', component: AppsComponent }, 
   { path: 'apps/23plusone', component: TwentyThreePlusOneComponent },
   { path: 'apps/knappe-koppe', component: KnappeKoppenComponent },
-  { path: 'apps/threejs', component: ThreejsAppComponent },
   { path: 'apps/gas-price-calculator', component: GasPriceCalculatorComponent },
-  { path: 'apps/universal-scheduler', component: UniversalSchedulerComponent },
-  { path: 'about', component: AboutComponent }
+  { path: 'apps/universal-scheduler', component: UniversalSchedulerComponent }
 ];
 
 @NgModule({

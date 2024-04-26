@@ -1,4 +1,152 @@
-<div class="body container my-3">
-    <p class="text-dark text-center display-2">{{ 'landing.greeting' | translate }}</p>
-    <p class="text-dark text-center display-6">{{ 'landing.projects' | translate }}</p>
+<div class="heroContainer home-hero1">
+    <div class="home-container1">
+        <h1 class="home-hero-heading">{{ 'landing.heroHeading' | translate }}</h1>
+    </div>
 </div>
+
+<div class="featuresContainer px-3">
+    <div class="home-features1 mb-3">
+        <div class="home-container2 text-center">
+            <h2 class="home-features-heading">{{ 'landing.featuresTitle' | translate }}</h2>
+        </div>
+        <div class="home-container3">
+            <a style="all: unset;" routerLink="/apps">
+                <div class="featuresCard feature-card-feature-card">
+                    <i class="fa fa-gamepad featuresIcon text-primary"></i>
+                    <div class="feature-card-container">
+                        <h3 class="feature-card-text">{{ 'landing.appShowcaseTitle' | translate }}</h3>
+                        <span class="bodySmall">{{ 'landing.appShowcaseText' | translate }}</span>
+                    </div>
+                </div>
+            </a>
+            <a style="all: unset;" routerLink="/games">
+                <div class="featuresCard feature-card-feature-card">
+                    <i class="fa fa-cube featuresIcon text-primary"></i>
+                    <div class="feature-card-container">
+                        <h3 class="feature-card-text">{{ 'landing.gameShowcaseTitle' | translate }}</h3>
+                        <span class="bodySmall">{{ 'landing.gameShowcaseText' | translate }}</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="divider border-top border-light w-100 mt-5">
+        </div>
+        <div class="ExperienceContainer">
+            <div class="featuresCard mb-3">
+                <h2 class="text-light">{{ 'about.Work Experience' | translate }}</h2>
+            </div>
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h4>{{ 'about.360Fashion' | translate }}</h4>
+                    <p><strong>{{ 'about.360Fashion' | translate }}</strong> · Fulltime</p>
+                    <p class="text-secondary">Dec. 2023 - Now</p>
+                </div>
+                <div class="card-body">
+                    <p>{{ 'about.360Fashion description' | translate }}</p>
+                </div>
+                <div class="card-footer">
+                    <span class="badge bg-secondary m-2">Unity</span>
+                    <span class="badge bg-secondary m-2">C#</span>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h4>{{ 'about.Back End Developer' | translate }}</h4>
+                    <p><strong>{{ 'about.Garden Connect | Garden Retail Marketing' | translate }}</strong> · Fulltime
+                    </p>
+                    <p class="text-secondary">Dec. 2022 - Mrt. 2023 · 4 mnd</p>
+                </div>
+                <div class="card-body">
+                    <p>{{ 'about.Garden Connect description' | translate }}</p>
+                </div>
+                <div class="card-footer">
+                    <span class="badge bg-secondary m-2">Symfony</span>
+                    <span class="badge bg-secondary m-2">PHP</span>
+                    <span class="badge bg-secondary m-2">SQL</span>
+                    <span class="badge bg-secondary">Postman</span>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h4>{{ 'about.Consultant' | translate }}</h4>
+                    <p><strong>{{ 'about.Devoteam' | translate }}</strong> · Fulltime</p>
+                    <p class="text-secondary">Feb. 2022 - Okt. 2022 · 9 mnd</p>
+                </div>
+                <div class="card-body">
+                    <p>{{ 'about.Devoteam description' | translate }}</p>
+                </div>
+                <div class="card-footer">
+                    <span class="badge bg-secondary me-2">REST APIs</span>
+                    <span class="badge bg-secondary me-2">AZURE</span>
+                    <span class="badge bg-secondary me-2">JAVA</span>
+                    <span class="badge bg-secondary me-2"><a class="text-light"
+                            href="https://courses.edx.org/certificates/e8497f61e1b14c338be0a484eff09d1b">Red
+                            Hat</a></span>
+                    <span class="badge bg-secondary">Mulesoft</span>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h4>{{ 'about.Intern' | translate }}</h4>
+                    <p><strong>{{ 'about.4BIS Innovations B.V.' | translate }}</strong> · Fulltime</p>
+                    <p class="text-secondary">Mrt. 2021 - Okt. 2021 · 8 mnd</p>
+                </div>
+                <div class="card-body">
+                    <p>{{ 'about.4BIS description' | translate }}</p>
+                </div>
+                <div class="card-footer">
+                    <span class="badge bg-secondary me-2">Symfony</span>
+                    <span class="badge bg-secondary me-2">PHP</span>
+                    <span class="badge bg-secondary me-2">Nodejs</span>
+                    <span class="badge bg-secondary">Bootstrap</span>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h4>{{ 'about.Junior Software Developer' | translate }}</h4>
+                    <p><strong>{{ 'about.Winst uit je woning' | translate }}</strong> · Fulltime</p>
+                    <p class="text-secondary">Jun. 2020 - Jul. 2020 · 2 mnd</p>
+                </div>
+                <div class="card-body">
+                    <p>{{ 'about.Winst description' | translate }}</p>
+                </div>
+                <div class="card-footer">
+                    <span class="badge bg-secondary">PHP</span>
+                </div>
+            </div>
+            <div class="featuresCard mb-3">
+                <h2 class="text-light">{{ 'about.Education' | translate }}</h2>
+            </div>
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h4>{{ 'about.Codam Coding College' | translate }}</h4>
+                    <p class="text-secondary">Jun. 2023 - Jul. 2023</p>
+                </div>
+                <div class="card-body">
+                    <p>{{ 'about.Codam description' | translate }}</p>
+                </div>
+                <div class="card-footer">
+                    <span class="badge bg-secondary me-2">C</span>
+                    <span class="badge bg-secondary me-2">Software Engineering</span>
+                    <span class="badge bg-secondary">Development</span>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h4>{{ 'about.Nova College' | translate }}</h4>
+                    <p>ICT- en mediabeheer</p>
+                    <p class="text-secondary">2019 - 2022</p>
+                </div>
+                <div class="card-body">
+                    <p>{{ 'about.Nova description' | translate }}</p>
+                </div>
+                <div class="card-footer">
+                    <span class="badge bg-secondary me-2">Web Development</span>
+                    <span class="badge bg-secondary">App Development</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

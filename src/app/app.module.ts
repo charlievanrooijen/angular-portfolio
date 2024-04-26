@@ -30,9 +30,7 @@ import { IntroComponent } from './components/games/animal-chain/intro/intro.comp
 import { AnimalChainComponent } from './components/games/animal-chain/animal-chain.component';
 import { AddAnimalComponent } from './components/games/animal-chain/add-animal/add-animal.component';
 import { TwentyThreePlusOneComponent } from './components/apps/twenty-three-plus-one/twenty-three-plus-one.component';
-import { ThreejsAppComponent } from './components/apps/threejs-app/threejs-app.component';
 import { KnappeKoppenComponent } from './components/apps/knappe-koppe/knappe-koppe.component';
-import { BarrelComponent } from './components/apps/threejs-app/3Dlib/barrel/barrel.component';
 import { GasPriceCalculatorComponent } from './components/apps/gas-price-calculator/gas-price-calculator.component';
 
 /********
@@ -41,7 +39,6 @@ import { GasPriceCalculatorComponent } from './components/apps/gas-price-calcula
 import { LandingpageComponent } from './pages/landingpage/landingpage.component';
 import { GamesComponent } from './pages/games/games.component';
 import { AppsComponent } from './pages/apps/apps.component';
-import { AboutComponent } from './pages/about/about.component';
 import { FooterComponent } from './templates/footer/footer.component';
 import { UniversalSchedulerComponent } from './components/apps/universal-scheduler/universal-scheduler.component';
 
@@ -56,7 +53,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     LandingpageComponent,
     GamesComponent,
     AppsComponent,
-    AboutComponent,
     NavbarComponent,
     KnappeKoppenComponent,
     AnimalChainComponent,
@@ -64,9 +60,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     IntroComponent,
     GameComponent,
     AddAnimalComponent,
-    ThreejsAppComponent,
     FooterComponent,
-    BarrelComponent,
     GasPriceCalculatorComponent,
     UniversalSchedulerComponent
   ],
